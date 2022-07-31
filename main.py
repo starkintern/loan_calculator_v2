@@ -2,14 +2,13 @@ if __name__ == '__main__':
 
     _loan_list = []
 
+    usr_input = input("Would you like to enter a loan?")
+
     def loan(self, principal, interest_rate, period, num_periods):
         self.principal = principal
         self.interest_rate = interest_rate
         self.period = period
         self.num_periods = num_periods
-
-
-    usr_input = input("Would you like to enter a loan?")
 
     while "no" not in usr_input.lower():
         usr_principal = int(input("Please enter your total loan amount: "))
@@ -21,11 +20,9 @@ if __name__ == '__main__':
 
         usr_input = input("Would you like to enter another loan? ")
 
-
     def loan_interest(self):
         return ((1 + (self.interest_rate / self.period)) ** (
                 self.period * self.num_periods) * self.principal) - self.principal
-
 
     def loan_total(_loan_list):
         total = 0
@@ -33,7 +30,6 @@ if __name__ == '__main__':
             total += ((loans.principal * loans.interest_rate) * loans.period * loans.num_periods) \
                      + loans.principal
         return total
-
 
     def monthly_budget(self, income, expenses):
         self.income = int(input("Please enter your monthly income: "))
