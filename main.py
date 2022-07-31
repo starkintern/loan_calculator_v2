@@ -13,7 +13,7 @@ if __name__ == '__main__':
     while "no" not in usr_input.lower():
         usr_principal = int(input("Please enter your total loan amount: "))
         usr_interest_rate = float(input("Please enter your loan interest rate as a percentage: "))
-        usr_period_input = int(input("Please enter your interest period frequency per year (365, 12, 6, 1): "))
+        usr_period_input = (input("Please enter your interest period frequency per year (365, 12, 6, 1): "))
         usr_num_periods = int(input("Please enter how many years you have accrued interest for: "))
 
         _loan_list.append(loan(usr_principal, usr_interest_rate, usr_period_input, usr_num_periods))
