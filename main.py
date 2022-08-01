@@ -41,7 +41,7 @@ if __name__ == '__main__':
                      + loans.principal
         return total
 
-    def monthly_budget(income, expenses):
+    def monthly_budget():
         income = int(input("Please enter your monthly income: "))
         expenses = int(input("Please enter your monthly expenses: "))
         monthly_budget1 = income - expenses
